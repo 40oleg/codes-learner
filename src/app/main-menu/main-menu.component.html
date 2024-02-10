@@ -1,0 +1,16 @@
+<div class="centralize">
+  @for (item of tests; track item.name) {
+    <tui-island
+      class="test-container">
+      <p class="tui-island__category">{{item.category}}</p>
+      <h3 class="tui-island__title">{{item.name}}</h3>
+      <p class="tui-island__paragraph">{{item.description}} </p>
+      <p class="tui-island__paragraph tui-island__paragraph_link">
+        <img class="preview" src="assets/images/test-previews/http_codes.png" alt="">
+      </p>
+      <div class="centralize">
+        <button tuiButton (click)="alert('Development in progress.')">Open</button>
+      </div>
+    </tui-island>
+  }
+</div>
